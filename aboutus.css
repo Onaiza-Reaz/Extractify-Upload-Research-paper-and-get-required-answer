@@ -1,0 +1,271 @@
+/* .about-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #020b31;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem 2rem;
+}
+
+.background-shape,
+.background-shape-2,
+.background-shape-3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.2;
+}
+
+.background-shape {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #00defc 10%, transparent 70%);
+  top: -120px;
+  left: -100px;
+}
+
+.background-shape-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #00bfff 10%, transparent 70%);
+  bottom: -100px;
+  right: -120px;
+}
+
+.background-shape-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #0088cc 10%, transparent 70%);
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.about-content {
+  z-index: 1;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px #00defc;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #00defc;
+}
+
+.about-subtitle {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.about-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.about-section h2 {
+  color: #00defc;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p,
+.about-section li {
+  color: #e0e0e0;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+
+.about-footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  color: #00defc;
+  text-align: center;
+}
+
+/* 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-container {
+  /* width: 100%; */
+  min-height: 100vh;
+  background-color: #020b31;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+}
+
+
+/* Glowing Backgrounds */
+.background-shape,
+.background-shape-2,
+.background-shape-3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.2;
+}
+
+.background-shape {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #00defc 10%, transparent 70%);
+  top: -120px;
+  left: -100px;
+}
+
+.background-shape-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #00bfff 10%, transparent 70%);
+  bottom: -100px;
+  right: -120px;
+}
+
+.background-shape-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #0088cc 10%, transparent 70%);
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Main Content Box */
+.about-content {
+  z-index: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 7rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem 3rem 4rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px #00defc;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+  margin: 8rem auto 4rem auto;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+/* Headings */
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.highlight {
+  color: #00defc;
+  text-align: center;
+}
+
+.about-subtitle {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Section Styling */
+.about-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.about-section h2 {
+  color: #00defc;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p,
+.about-section li {
+  color: #e0e0e0;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+/* Footer */
+.about-footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  color: #00defc;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

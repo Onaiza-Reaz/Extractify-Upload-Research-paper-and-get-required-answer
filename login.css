@@ -1,0 +1,305 @@
+/* 
+.login-page {
+  height: 100vh;
+  width: 100wh;
+  background-color: #020b31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background-shape {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #00defc;
+  opacity: 0.2;
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  z-index: 0;
+  filter: blur(80px);
+}
+
+
+.login-container {
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00defc;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  color: white;
+}
+
+
+
+.login-logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 60px; 
+  height: auto;
+  margin-bottom: 1px;
+}
+
+.login-container h2{
+    text-align: center;
+}
+
+
+
+.login-container input {
+  background: transparent;
+  border: 1px solid #00defc;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  color: white;
+}
+
+
+.login-btn {
+  background-color: #00defc;
+  border: none;
+  padding: 12px;
+  margin-bottom: 12px;
+  color: #020b31;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+
+
+
+.google-login {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #020b31;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.google-login img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.redirect-signup {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.redirect-signup a {
+  color: #00defc;
+  text-decoration: none;
+}
+
+.redirect-signup a:hover {
+  text-decoration: underline;
+}
+
+
+.forgot-password {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.forgot-password a {
+  color: #899799;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+} 
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+/* Fullscreen background */
+.login-page {
+  height: 100vh;
+  width: 100vw; /* fixed width typo */
+  background-color: #020b31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Decorative glow */
+.background-shape {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #00defc;
+  opacity: 0.2;
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  z-index: 0;
+  filter: blur(80px);
+}
+
+/* Login box */
+.login-container {
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00defc;
+  display: flex;
+  flex-direction: column;
+  width: 350px; /* slightly wider for better spacing */
+  color: white;
+}
+
+/* Logo */
+.login-logo {
+  display: block;
+  margin: 0 auto 15px;
+  width: 60px;
+  height: auto;
+}
+
+/* Title */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Inputs */
+.login-container input {
+  width: 92%; /* ✅ full width */
+  background: transparent;
+  border: 1px solid #00defc;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+}
+
+.login-container input::placeholder {
+  color: #aaa;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%; /* ✅ make full width and separate line */
+  background-color: #00defc;
+  border: none;
+  padding: 12px;
+  margin-top: 4px;
+  color: #020b31;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #04e6ff;
+}
+
+/* Google button */
+.google-login {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #020b31;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.google-login:hover {
+  transform: scale(1.02);
+}
+
+.google-login img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Signup link */
+.redirect-signup {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.redirect-signup a {
+  color: #00defc;
+  text-decoration: none;
+}
+
+.redirect-signup a:hover {
+  text-decoration: underline;
+}
+
+/* Forgot password */
+.forgot-password {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.forgot-password a {
+  color: #899799;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}

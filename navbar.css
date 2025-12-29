@@ -1,0 +1,185 @@
+/* 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #000b33, #001244);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box; 
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo img {
+  width: 45px;
+  height: auto;
+}
+
+.brand-name {
+  font-weight: bold;
+  color: #00defc;
+  font-size: 1.2rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #00defc;
+  text-shadow: 0 0 10px #00defc;
+}
+
+.nav-btn {
+  background-color: #00defc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #020b31;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #00b2c9;
+} */
+
+
+
+
+
+/* Reset global spacing */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar full width fix */
+.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #000b33, #001244);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box; 
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo img {
+  width: 45px;
+  height: auto;
+}
+
+.brand-name {
+  font-weight: bold;
+  color: #00defc;
+  font-size: 1.2rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #00defc;
+  text-shadow: 0 0 10px #00defc;
+}
+
+/* Default button (Get In / Get Started) */
+.nav-btn {
+  background-color: #00defc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #020b31;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #00b2c9;
+  transform: scale(1.05);
+}
+
+/* ✅ Logout button variant */
+.nav-btn.logout {
+  background-color: transparent;
+  border: 2px solid #00defc;
+  color: #00defc;
+}
+
+.nav-btn.logout:hover {
+  background-color: #00defc;
+  color: #020b31;
+  transform: scale(1.05);
+}
+
+/* Make sure layout adapts on mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-btn {
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
+}

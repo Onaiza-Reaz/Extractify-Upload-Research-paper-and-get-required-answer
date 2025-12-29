@@ -1,0 +1,155 @@
+/* Page background */
+.signup-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #020b31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glowing circular background shape */
+.background-shape {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #00defc;
+  opacity: 0.2;
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  z-index: 0;
+  filter: blur(80px);
+}
+
+/* Signup card/container */
+.signup-container {
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00defc;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  color: white;
+}
+
+
+.signup-logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 60px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 1px;
+}
+
+.signup-container h2{
+    text-align: center;
+}
+
+
+/* Label + input/select wrapper */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  width: 100%;
+}
+
+
+.google-signup {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #020b31;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.google-signup img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+.name-fields-row {
+  display: flex;
+  gap: 14px;
+}
+
+.field.half {
+  flex: 1;
+}
+
+
+/* Improve spacing between first and last name */
+.field input,
+.field select {
+  margin-top: 0;
+}
+
+
+
+/* Input and select styling */
+.signup-container input
+ {
+  background: transparent;
+  border: 1px solid #00defc;
+  padding: 12px;
+  border-radius: 6px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+
+/* Signup button */
+.signup-btn {
+  background-color: #00defc;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  color: #020b31;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Error message */
+.error {
+  color: #ff4f4f;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* Link to login */
+.login-redirect {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-redirect a {
+  color: #00defc;
+  text-decoration: none;
+}
+
+.login-redirect a:hover {
+  text-decoration: underline;
+}
+
+
